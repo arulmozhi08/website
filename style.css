@@ -2,19 +2,27 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f2f5;
+    background: #ff9900; /* Orange background */
+    color: #ffffff; /* White text */
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background: #007bff;
+    background: #ffffff; /* White background for header */
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 400px; /* Increased logo size */
     transition: transform 0.3s;
 }
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Rest of your CSS styles */
+
 
 .logo:hover {
     transform: scale(1.1);
