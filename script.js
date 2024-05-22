@@ -1,18 +1,89 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Assuming 'data' is an array of objects with two properties: 'column1' and 'column2'
-    var data = [
-        { column1: "Data 1", column2: "Data A" },
-        { column1: "Data 2", column2: "Data B" },
-        // Add more data as needed
-    ];
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+}
 
-    var tableBody = document.getElementById("data-table").getElementsByTagName("tbody")[0];
+header {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+}
 
-    data.forEach(function(rowData) {
-        var row = tableBody.insertRow();
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = rowData.column1;
-        cell2.innerHTML = rowData.column2;
-    });
-});
+.logo {
+    max-width: 200px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image {
+    max-width: 45%;
+    height: auto;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.button-container {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    background: #007bff;
+    color: white;
+}
