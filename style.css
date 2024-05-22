@@ -13,15 +13,13 @@ header {
 }
 
 .logo {
-    max-width: 400px; /* Reduced logo size */
+    max-width: 300px; /* Reduced logo size */
     transition: transform 0.3s;
 }
 
 .logo:hover {
     transform: scale(1.1);
 }
-
-/* Rest of your CSS styles */
 
 .image-container {
     display: flex;
@@ -30,7 +28,7 @@ header {
 }
 
 .image {
-    width: 45%;
+    width: 30%; /* Reduced image size */
     height: auto;
     border: 5px solid #ff0000; /* Red border */
     border-radius: 10px;
@@ -127,5 +125,4 @@ tbody tr td:first-child {
         transform: scale(1);
     }
 }
-
 
