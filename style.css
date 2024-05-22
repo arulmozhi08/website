@@ -13,7 +13,7 @@ header {
 }
 
 .logo {
-    max-width: 300px; /* Reduced logo size */
+    max-width: 600px; /* Reduced logo size */
     transition: transform 0.3s;
 }
 
