@@ -22,17 +22,25 @@ header {
 
 .image-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
     padding: 20px;
 }
 
 .image {
-    max-width: 45%;
+    width: 45%;
     height: auto;
     border: 5px solid #007bff;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    animation: pop-in 1s ease-in-out forwards;
+}
+
+.image.left {
+    animation-delay: 0.5s;
+}
+
+.image.right {
+    animation-delay: 1s;
 }
 
 .image:hover {
@@ -89,9 +97,31 @@ th {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #ffcc99;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
 }
 
 tbody tr:hover {
     background-color: #f1f1f1;
 }
+
+tbody tr td:first-child {
+    text-align: center;
+    font-weight: bold;
+    background: #f2f2f2;
+}
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
