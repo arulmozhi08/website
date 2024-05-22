@@ -13,7 +13,7 @@ header {
 }
 
 .logo {
-    max-width: 600px; /* Increased logo size */
+    max-width: 400px; /* Reduced logo size */
     transition: transform 0.3s;
 }
 
@@ -22,11 +22,6 @@ header {
 }
 
 /* Rest of your CSS styles */
-
-
-.logo:hover {
-    transform: scale(1.1);
-}
 
 .image-container {
     display: flex;
@@ -37,7 +32,7 @@ header {
 .image {
     width: 45%;
     height: auto;
-    border: 5px solid #007bff;
+    border: 5px solid #ff0000; /* Red border */
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: pop-in 1s ease-in-out forwards;
@@ -65,7 +60,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background: #007bff;
+    background: #ff0000; /* Red background */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -73,7 +68,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #cc0000; /* Darker red on hover */
     transform: scale(1.1);
 }
 
@@ -100,12 +95,12 @@ th {
     background-color: #f2f2f2;
     position: sticky;
     top: 0;
-    background: #007bff;
+    background: #ff0000; /* Red background */
     color: white;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #ffcc99;
+    background-color: #ffcccc; /* Lighter red for even rows */
 }
 
 tbody tr:nth-child(odd) {
@@ -132,4 +127,5 @@ tbody tr td:first-child {
         transform: scale(1);
     }
 }
+
 
