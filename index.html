@@ -3,24 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Attractive Company Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="company_logo.png" alt="Company Logo">
+        <img src="logo.png" alt="Company Logo" class="logo">
     </header>
+
     <main>
         <div class="image-container">
-            <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
+            <img src="img1.jpg" alt="Image 1" class="image">
+            <img src="img2.jpg" alt="Image 2" class="image">
         </div>
-        <div class="table-container">
-            <table id="data-table">
-                <!-- Table content will be added dynamically -->
+
+        <div class="button-container">
+            <button onclick="scrollToTable()">Go to Table</button>
+        </div>
+
+        <div class="table-container" id="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nodes needing repair</th>
+                        <th>Nodes not needing repair</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Axis/Drive/AXIS_NUMBER_FOR_MONITORING</td><td>Axis/Drive/AA_OFF_MODE</td></tr>
+                    <tr><td>Axis/Drive/GAIN_FOR_MONITORING</td><td>Axis/Drive/CTRLOUT_MODULE_NR</td></tr>
+                    <tr><td>Channel/Configuration/mmcCmdQuit</td><td>Axis/Drive/AC_FILTER_TIME</td></tr>
+                    <tr><td>Channel/CoordSysWorkAreaLimits/waCSCoordSys</td><td>Axis/Drive/AX_MOTION_DIR</td></tr>
+                    <tr><td>Channel/CoordSysWorkAreaLimits/waCSLimitMinus</td><td>Axis/Drive/AA_OFF_MODE</td></tr>
+                    <tr><td>Channel/CoordSysWorkAreaLimits/waCSLimitPlus</td><td>Axis/Drive/CTRLOUT_TYPE</td></tr>
+                    <tr><td>Channel/CoordSysWorkAreaLimits/waCSMinusEnable</td><td>Axis/Drive/DISPLAY_IS_MODULO</td></tr>
+                    <tr><td>Channel/CoordSysWorkAreaLimits/waCSPlusEnable</td><td>Axis/Drive/ENC_MODULE_NR</td></tr>
+                    <tr><td>Axis/Drive/OFFSETVALUE_FOR_MONITORING</td><td>Axis/Drive/ENC_TYPE</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ABS_5</td><td>Axis/Drive/FFW_MODE</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ABS_6</td><td>Axis/Drive/GANTRY_AXIS_TYPE</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ABS_7</td><td>Channel/Configuration/mmcCmdQuitPrep</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ABS_8</td><td>Channel/Configuration/numActAxes</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ABS_9</td><td>Channel/Configuration/numAuxAxes</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_0</td><td>Channel/Configuration/numBasisFrames</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_1</td><td>Channel/Configuration/numContourInProtArea</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_2</td><td>Channel/Configuration/numGeoAxes</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_3</td><td>Channel/Configuration/numMachAxes</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_4</td><td>Channel/Configuration/numOriAxes</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_5</td><td>Channel/Configuration/numProtArea</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_6</td><td>Channel/Configuration/numRParams</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_7</td><td>Channel/Configuration/numSpindles</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_8</td><td>Channel/Configuration/numSpindlesLog</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_CONT_ORD_9</td><td>Channel/Configuration/numToolEdges</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_MINUS_LIM</td><td>Channel/Configuration/numUserFrames</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDD_PA_PLUS_LIM</td><td>Channel/Configuration/oemProtText</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDU_PA_ACTIV_IMMED</td><td>Channel/Configuration/progProtText</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDU_PA_CONT_NUM</td><td>Channel/Configuration/punchNibActivation</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDU_PA_CONT_TYP_0</td><td>Channel/Configuration/stringIsFileId</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDU_PA_CONT_TYP_1</td><td>Channel/Configuration/stringIsMeaning</td></tr>
+                    <tr><td>Channel/ProtectedArea/MDU_PA_CONT_TYP_2</td><td>Channel/Configuration/stringIsSymbolId</td></tr>
+                </tbody>
             </table>
         </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
+
