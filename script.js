@@ -66,24 +66,4 @@ button:hover {
     overflow-x: auto;
     padding: 20px;
     background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-    position: sticky;
-    top: 0;
-    background: #007bff;
-    color: white;
-}
+    box-shadow: 0 5px 15px rgba
